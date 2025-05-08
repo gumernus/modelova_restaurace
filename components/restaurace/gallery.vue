@@ -17,7 +17,6 @@
 <style setup scoped>
 .gallery {
   margin-top: 50px;
-  margin-bottom: 300px;
 }
 
 .gallery-content {

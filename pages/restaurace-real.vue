@@ -6,6 +6,8 @@
     <RestauraceReservation></RestauraceReservation>
     <RestauraceReviews></RestauraceReviews>
     <RestauraceGallery></RestauraceGallery>
+    <RestauraceContacts></RestauraceContacts>
+    <RestauraceFooter></RestauraceFooter>
   </div>
 </template>
 
