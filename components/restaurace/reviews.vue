@@ -207,4 +207,12 @@ const scrollRight = () => {
 .stars-row i {
   font-size: 16px;
 }
+
+@media screen and (max-width: 500px) {
+
+.arrows {
+  display: none;
+}
+  
+}
 </style>

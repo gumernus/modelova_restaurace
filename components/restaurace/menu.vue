@@ -8,45 +8,45 @@
                     <h2>Burgery</h2>
                     <p>Šťavnaté maso, domácí pečivo a jemné omáčky. Naše burgery jsou vyvážené, plné chuti a podávané s
                         precizností.</p>
-                    <a href="#neco" class="btn primary">Rezervovat</a>
+                    <a href="#neco" class="btn primary">Přejít na nabídku</a>
                 </div>
             </div>
             <div class="item">
-                <img src="/image-30.png" alt="Burger" class="item-image" />
+                <img src="/image-31.png" alt="Burger" class="item-image" />
                 <div class="item-content">
-                    <h2>Burgery</h2>
-                    <p>Šťavnaté maso, domácí pečivo a jemné omáčky. Naše burgery jsou vyvážené, plné chuti a podávané s
-                        precizností.</p>
-                    <a href="#neco" class="btn primary">Rezervovat</a>
+                    <h2>Saláty</h2>
+                    <p>Čerstvá zelenina a sezónní suroviny kombinované s lehkými zálivkami. V každém soustu najdete
+                        svěžest.</p>
+                    <a href="#neco" class="btn primary">Přejít na nabídku</a>
                 </div>
             </div>
             <div class="item">
-                <img src="/image-30.png" alt="Burger" class="item-image" />
+                <img src="/image-32.png" alt="Burger" class="item-image" />
                 <div class="item-content">
-                    <h2>Burgery</h2>
-                    <p>Šťavnaté maso, domácí pečivo a jemné omáčky. Naše burgery jsou vyvážené, plné chuti a podávané s
-                        precizností.</p>
-                    <a href="#neco" class="btn primary">Rezervovat</a>
+                    <h2>Česká kuchyně</h2>
+                    <p>Tradiční české recepty v moderním pojetí. Vychutnejte si klasiku s lehkostí a důrazem na kvalitu.
+                    </p>
+                    <a href="#neco" class="btn primary">Přejít na nabídku</a>
                 </div>
             </div>
             <div class="item">
-                <img src="/image-30.png" alt="Burger" class="item-image" />
+                <img src="/image-35.png" alt="Burger" class="item-image" />
                 <div class="item-content">
-                    <h2>Burgery</h2>
-                    <p>Šťavnaté maso, domácí pečivo a jemné omáčky. Naše burgery jsou vyvážené, plné chuti a podávané s
-                        precizností.</p>
-                    <a href="#neco" class="btn primary">Rezervovat</a>
+                    <h2>Bezmasá jídla</h2>
+                    <p>Rostlinné ingredience v nápaditých kombinacích. Bez masa, ale s plnou, vyváženou chutí, která vás
+                        překvapí.</p>
+                    <a href="#neco" class="btn primary">Přejít na nabídku</a>
                 </div>
             </div>
             <div class="item big-item">
-                <img src="/image-30.png" alt="Burger" class="item-image" />
+                <img src="/image-34.png" alt="Burger" class="item-image" />
                 <div class="item-content">
                     <h2>Dezerty</h2>
                     <p>Naše dezerty jsou skutečným zážitkem pro vaše smysly. Ručně vyráběné s láskou a pozorností k
                         detailu, kombinují tradiční cukrářské techniky s moderními trendy. Čokoláda, ovoce a ořechy v
                         harmonických kombinacích, které zanechají nezapomenutelný dojem. Každý zákusek je pečlivě
                         navržen, aby zůstal v paměti a dodal vaší návštěvě sladkou tečku.</p>
-                    <a href="#neco" class="btn primary">Rezervovat</a>
+                    <a href="#neco" class="btn primary">Přejít na nabídku</a>
                 </div>
             </div>
         </div>
@@ -92,6 +92,7 @@ p {
 .item-image {
     width: auto;
     height: 200px;
+    width: 300px;
     object-fit: cover;
     object-position: center;
     border-radius: 25px;
@@ -167,15 +168,16 @@ p {
         background-color: #eff5e3;
         width: 100%;
     }
+
     .big-item .item-image {
-    width: 100%;
-}
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 800px) {
     .item-image {
-
-        height: 100%;
+        width: 100%;
+        height: 300px;
     }
 
     .item {

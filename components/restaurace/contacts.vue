@@ -1,7 +1,7 @@
 <template>
   <section class="contacts">
     <h1>Kontakty</h1>
-    <div class="container">
+    <div class="contacts-container">
       <div class="image"></div>
       <div class="content">
         <div class=column>
@@ -43,7 +43,7 @@
   margin-top: 50px;
 }
 
-.container {
+.contacts-container {
   display: flex;
   gap: 50px;
   justify-content: space-between;
@@ -57,15 +57,16 @@
   background-color: #fff;
   color: #4b4b4b;
 }
+
 .image {
   flex: 0.5;
   height: 100%;
-  background-image: url('/image-23.png');
-  background-color: #eb3b3b;
+  background-image: url('/mapa.png');
   background-size: cover;
   background-position: center;
   border-radius: 25px;
 }
+
 .content {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -75,38 +76,72 @@
   justify-content: space-between;
   gap: 25px;
 }
+
 .column {
   width: 100%;
   display: flex;
+
+  @media (max-width: 800px) {
+    .contacts-container {
+      flex-wrap: wrap;
+      height: auto;
+      gap: 30px;
+    }
+
+    .image {
+      flex: 0.5;
+      height: auto;
+    }
+
+    .content {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .column {
+      width: 100%;
+    }
+  }
+
   flex-direction: column;
   gap: 25px;
 }
+
 .field {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-@media (max-width: 800px) {
-  .container {
+@media (max-width: 900px) {
+  .contacts-container {
     flex-wrap: wrap;
     height: auto;
+    flex-direction: column;
     gap: 30px;
+    align-items: center;
+    /* Center items horizontally */
   }
-  
+
   .image {
     flex: 0.5;
     height: auto;
-    background-image: url('/image-23.png');
   }
 
   .content {
-    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
     gap: 30px;
   }
 
   .column {
     width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    flex-direction: column;
   }
 }
 </style>

@@ -2,10 +2,12 @@
   <section class="gallery">
     <h1>Galerie</h1>
     <div class="gallery-content">
-      <div class="big-image" style="background-image: url('/image-23.png');"></div>
+      <div class="big-image" style="background-image: url('/image-90.jpeg');"></div>
       <div class="small-images">
-        <div class="small-image" style="background-image: url('/image-30.png');"></div>
-        <div class="small-image" style="background-image: url('/image-31.png');"></div>
+        <div class="small-image" style="background-image: url('/image-37.png');"></div>
+        <div class="small-image overlay" style="background-image: url('/image-36.png');">
+          <a href="#" class="overlay-text">+19 dalších</a>
+        </div>
       </div>
     </div>
     <div class="controls">
@@ -42,7 +44,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 25px;
+  gap: 50px;
 }
 
 .small-image {
@@ -53,9 +55,40 @@
   border-radius: 25px;
 }
 
+.small-image.overlay {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+}
+
+.small-image.overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(57, 88, 50, 0.8);
+  border-radius: 25px;
+  z-index: 1;
+}
+
+.small-image.overlay .overlay-text {
+  position: relative;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+  z-index: 2;
+}
+
 .controls {
   display: flex;
-  justify-content: flex-start; /* Align to the left */
+  justify-content: flex-start;
   margin-top: 50px;
 }
 
@@ -80,7 +113,7 @@
 @media (max-width: 800px) {
   .gallery-content {
     flex-direction: column;
-    gap: 30px;
+    gap: 25px;
   }
 
   .big-image {
@@ -90,7 +123,7 @@
 
   .small-images {
     flex-direction: row;
-    gap: 15px;
+    gap: 25px;
   }
 
   .small-image {

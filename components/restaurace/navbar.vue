@@ -4,6 +4,7 @@
     <div class="nav-links">
       <a href="#onas" class="link">O nás</a>
       <a href="#menu" class="link">Menu</a>
+      <a href="#recenze" class="link">Recenze</a>
       <a href="#galerie" class="link">Galerie</a>
       <a href="#kontakty" class="link">Kontakty</a>
       <a href="#rezervace" class="reserve-btn">
