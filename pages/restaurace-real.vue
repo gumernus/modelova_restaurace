@@ -5,6 +5,7 @@
     <RestauraceMenu></RestauraceMenu>
     <RestauraceReservation></RestauraceReservation>
     <RestauraceReviews></RestauraceReviews>
+    <RestauraceGallery></RestauraceGallery>
   </div>
 </template>
 
