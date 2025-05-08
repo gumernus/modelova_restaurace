@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar">
-    <a href="#" class="brand">Vaše Restaurace</a>
+    <a href="/" class="brand">Vaše Restaurace</a>
     <div class="nav-links">
       <a href="#onas" class="link">O nás</a>
       <a href="#menu" class="link">Menu</a>
