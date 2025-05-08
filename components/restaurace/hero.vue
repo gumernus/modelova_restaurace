@@ -12,7 +12,7 @@
           <a href="#kontakt" class="btn secondary">Kontaktovat</a>
         </div>
       </div>
-      <div class="hero-image"></div>
+      <div class="hero-image"></div> <!-- Zmizelo <img>, máme jen div -->
     </div>
     <div class="opening-hours">
       <div class="card">

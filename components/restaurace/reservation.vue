@@ -1,60 +1,113 @@
+<script setup>
+import { ref } from 'vue';
+
+const formData = ref({
+  fullname: '',
+  guests: '',
+  date: '',
+  time: '',
+  email: '',
+  phone: '',
+  note: ''
+});
+
+const confirmationMessage = ref('');
+
+const handleSubmit = () => {
+  const reservationData = {
+    fullname: formData.value.fullname.trim(),
+    guests: parseInt(formData.value.guests, 10),
+    date: formData.value.date,
+    time: formData.value.time,
+    email: formData.value.email.trim(),
+    phone: formData.value.phone.trim(),
+    note: formData.value.note.trim()
+  };
+
+  console.log('Reservation Data:', reservationData);
+
+  // Show confirmation message
+  confirmationMessage.value = 'Rezervace byla úspěšně odeslána.';
+
+  // Clear form data
+  formData.value = {
+    fullname: '',
+    guests: '',
+    date: '',
+    time: '',
+    email: '',
+    phone: '',
+    note: ''
+  };
+
+  // Hide confirmation message after 5 seconds
+  setTimeout(() => {
+    confirmationMessage.value = '';
+  }, 5000);
+};
+</script>
+
 <template>
   <section class="reservation">
     <h1>Rezervace</h1>
-    <div class="container">
+    <div class="reservation-container">
       <div class="img"></div>
       <div class="content">
-          <div class="row">
+        <form @submit.prevent="handleSubmit">
+          <div class="row" style="margin-bottom: 25px;">
             <div class="field">
               <label for="fullname">*celé jméno</label>
-              <input type="text" id="fullname" name="fullname" placeholder="Jan Novák">
+              <input type="text" id="fullname" name="fullname" v-model="formData.fullname" placeholder="Jan Novák">
             </div>
             <div class="field" style="width: 100px;">
               <label for="guests">*počet osob</label>
-              <input type="number" id="guests" name="guests" placeholder="4" min="1"">
+              <input type="number" id="guests" name="guests" v-model="formData.guests" placeholder="4" min="1">
+            </div>
           </div>
-          <div class=" field">
+          <div class="row" style="margin-bottom: 25px;">
+            <div class="field">
               <label for="date">*datum</label>
-              <input type="date" id="date" name="date">
+              <input type="date" id="date" name="date" v-model="formData.date">
             </div>
             <div class="field">
               <label for="time">*čas</label>
-              <input type="time" id="time" name="time">
+              <input type="time" id="time" name="time" v-model="formData.time">
             </div>
           </div>
-          <div class="row">
+          <div class="row" style="margin-bottom: 25px;">
             <div class="field" style="width: 100%;">
               <label for="email">email</label>
-              <input type="email" id="email" name="email" placeholder="jan.novak@gmail.com">
+              <input type="email" id="email" name="email" v-model="formData.email" placeholder="jan.novak@gmail.com">
             </div>
             <div class="field" style="width: 100%;">
               <label for="phone">telefonní číslo</label>
-              <input type="tel" id="phone" name="phone" placeholder="+420 123 456 789">
+              <input type="tel" id="phone" name="phone" v-model="formData.phone" placeholder="+420 123 456 789">
             </div>
           </div>
-          <div class="row">
+          <div class="row" style="margin-bottom: 25px;">
             <div class="field poznamka" style="width: 100%;">
               <label for="note">poznámka</label>
-              <textarea id="note" class="poznamka" name="note" placeholder="Toto je text poznámky"></textarea>
+              <textarea id="note" class="poznamka" name="note" v-model="formData.note" placeholder="Toto je text poznámky"></textarea>
             </div>
           </div>
-          <div class="row">
+          <div class="row" style="align-items: center;">
             <div class="field">
               <button type="submit" class="btn primary">Odeslat rezervaci</button>
             </div>
+            <p v-if="confirmationMessage" style="margin-left: 15px;">{{ confirmationMessage }}</p>
           </div>
+        </form>
       </div>
     </div>
   </section>
 </template>
-
 
 <style setup scoped>
 .reservation {
   margin-top: 50px;
 }
 
-.container {
+.reservation-container {
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -141,8 +194,15 @@ input {
   color: #eff5e3;
 }
 
+.confirmation-message {
+  margin-top: 20px;
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+
 @media (max-width: 800px) {
-  .container {
+  .reservation-container {
     flex-direction: column;
     gap: 30px; /* Reduce gap for smaller screens */
   }
