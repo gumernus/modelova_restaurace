@@ -11,28 +11,28 @@ html {
     scroll-behavior: smooth;
 }
 
-h1 {
+body h1 {
     font-size: 57px;
     font-weight: 300;
     color: black;
 }
 
-h2 {
+body h2 {
     font-size: 35px;
     color: black;
 }
 
-h3 {
+body h3 {
     font-size: 20px;
     color: black;
 }
 
-p {
+body p {
     font-size: 15px;
     color: #4b4b4b;
 }
 
-label {
+body label {
     font-size: 10px;
     font-weight: bold;
     color: #395832;
