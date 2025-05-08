@@ -80,10 +80,32 @@
 @media (max-width: 800px) {
   .gallery-content {
     flex-direction: column;
+    gap: 30px;
   }
 
   .big-image {
-    height: 200px;
+    width: 100%;
+    height: 300px;
+  }
+
+  .small-images {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .small-image {
+    width: 50%;
+    height: 150px;
+  }
+}
+
+@media (max-width: 500px) {
+  .small-images {
+    flex-direction: column;
+  }
+
+  .small-image {
+    width: 100%;
   }
 }
 </style>

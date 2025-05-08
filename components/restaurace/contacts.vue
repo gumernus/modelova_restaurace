@@ -68,6 +68,7 @@
 }
 .content {
   padding-top: 50px;
+  padding-bottom: 50px;
   flex: 0.5;
   display: flex;
   flex-direction: row;
@@ -84,5 +85,28 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 30px;
+  }
+  
+  .image {
+    flex: 0.5;
+    height: auto;
+    background-image: url('/image-23.png');
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .column {
+    width: 100%;
+  }
 }
 </style>

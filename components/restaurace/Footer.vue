@@ -122,4 +122,30 @@ p {
     height: 30px;
     fill: #eff5e3;
 }
+
+@media (max-width: 800px) {
+    .footer-top {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        flex-wrap: wrap;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-icons {
+        justify-content: center;
+    }
+}
 </style>
