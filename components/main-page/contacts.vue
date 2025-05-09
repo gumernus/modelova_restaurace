@@ -52,10 +52,10 @@
   height: 400px;
   width: 100%;
   padding: 25px;
-  border: 1px solid #395832;
+  border: 1px solid var(--primary-color);
   border-radius: 50px;
-  background-color: #fff;
-  color: #4b4b4b;
+  background-color: var(--title-color-light);;
+  color: var(--text-color);
 }
 
 .image {

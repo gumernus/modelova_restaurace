@@ -74,9 +74,9 @@ const reviews = [
     gap: 25px;
     padding: 25px;
     border-radius: 25px;
-    background-color: #fff;
-    color: #4b4b4b;
-    border: 1px solid #395832;
+    background-color: var(--title-color-light);;
+    color: var(--text-color);
+    border: 1px solid var(--primary-color);
     flex: 0 0 auto;
     min-width: 200px;
     height: 100%;

@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --primary-color: #583232;
+    --overlay-color: rgba(88, 50, 50, 0.8);
+    --background-color: #f5e3e3;
+    --text-color: #4b4b4b;
+    --title-color: #000000;
+    --title-color-light: #ffffff;
+}
+
 body {
     padding: 50px;
     padding-bottom: 0px;
-    background-color: #EFF5E3;
+    background-color: var(--background-color);
     font-family: "Montserrat", sans-serif;
 }
 
@@ -14,32 +23,32 @@ html {
 body h1 {
     font-size: 57px;
     font-weight: 300;
-    color: black;
+    color: var(--title-color);
 }
 
 body h2 {
     font-size: 35px;
-    color: black;
+    color: var(--title-color);
 }
 
 body h3 {
     font-size: 20px;
-    color: black;
+    color: var(--title-color);
 }
 
 body p {
     font-size: 15px;
-    color: #4b4b4b;
+    color: var(--text-color);
 }
 
 body label {
     font-size: 10px;
     font-weight: bold;
-    color: #395832;
+    color: var(--primary-color);
     text-transform: uppercase;
 }
 
 ul {
     list-style-type: disc;
-    color: #4b4b4b;
+    color: var(--text-color);
 }

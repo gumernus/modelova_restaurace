@@ -81,14 +81,14 @@
 }
 
 .btn.primary {
-  background-color: #395832;
+  background-color: var(--primary-color);
   color: #eff5e3;
 }
 
 .btn.secondary {
   background-color: #eff5e3;
-  color: #395832;
-  border: 1px solid #395832;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 
 .opening-hours {
@@ -104,8 +104,8 @@
   gap: 25px;
   padding: 50px;
   border-radius: 25px;
-  background-color: white;
-  border: 1px solid #395832;
+  background-color: var(--title-color-light);;
+  border: 1px solid var(--primary-color);
   min-width: 260px;
 }
 

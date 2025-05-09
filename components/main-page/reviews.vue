@@ -154,14 +154,14 @@ const scrollRight = () => {
 }
 
 .btn.primary {
-  background-color: #395832;
+  background-color: var(--primary-color);
   color: #eff5e3;
 }
 
 .btn.secondary {
   background-color: #eff5e3;
-  color: #395832;
-  border: 1px solid #395832;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 
 .arrows {
@@ -178,9 +178,9 @@ const scrollRight = () => {
   border-radius: 25px;
   text-decoration: none;
   font-size: 15px;
-  background-color: #fff;
-  color: #4b4b4b;
-  border: 1px solid #395832;
+  background-color: var(--title-color-light);;
+  color: var(--text-color);
+  border: 1px solid var(--primary-color);
   flex: 0 0 auto;
   min-width: 200px;
   max-width: 400px;

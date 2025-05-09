@@ -26,7 +26,7 @@
   justify-content: space-between;
   overflow: hidden;
   border-radius: 9999px;
-  background-color: #395832;
+  background-color: var(--primary-color);
   padding-left: 28px;
   padding-right: 10px;
   padding-top: 10px;
@@ -37,7 +37,7 @@
 .brand {
   font-size: 17px;
   font-weight: 300;
-  color: white;
+  color: var(--title-color-light);;
 }
 
 .nav-links {
@@ -48,7 +48,7 @@
 
 .link {
   font-size: 15px;
-  color: white;
+  color: var(--title-color-light);;
 }
 
 .reserve-btn {
@@ -66,7 +66,7 @@
 .reserve-text {
   font-size: 15px;
   font-weight: 600;
-  color: #395832;
+  color: var(--primary-color);
 }
 
 @media screen and (max-width: 1000px) {

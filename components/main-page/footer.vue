@@ -45,7 +45,7 @@
     align-items: flex-start;
     gap: 50px;
     padding: 50px;
-    background-color: #395832;
+    background-color: var(--primary-color);
     margin-left: -50px;
     margin-right: -50px;
     margin-top: 50px;
@@ -54,7 +54,7 @@
 h1,
 h2,
 h3 {
-    color: white
+    color: var(--title-color-light);
 }
 
 p {
@@ -134,7 +134,7 @@ p {
 }
 
 .footer-icons .icon-link:hover {
-    color: #ffffff;
+    color: var(--title-color-light);;
 }
 
 @media (max-width: 800px) {

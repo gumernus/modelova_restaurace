@@ -324,7 +324,7 @@
     flex: 1;
     text-align: right;
     font-weight: bold;
-    color: #395832;
+    color: var(--primary-color);
 }
 
 /* Responsive styles */

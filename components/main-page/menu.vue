@@ -62,7 +62,7 @@
 h1,
 h2,
 p {
-    color: white;
+    color: var(--title-color-light);;
 }
 
 .menu {
@@ -70,7 +70,7 @@ p {
     margin-left: -50px;
     margin-right: -50px;
     margin-top: 50px;
-    background-color: #395832;
+    background-color: var(--primary-color);
 }
 
 .menu-items {
@@ -116,7 +116,7 @@ p {
 }
 
 .big-item h2 {
-    color: black;
+    color: var(--title-color);
 }
 
 .big-item .item-image {
@@ -125,11 +125,11 @@ p {
 }
 
 .big-item p {
-    color: #4b4b4b;
+    color: var(--text-color);
 }
 
 .big-item .btn.primary {
-    background-color: #395832;
+    background-color: var(--primary-color);
     color: #eff5e3;
 }
 
@@ -147,7 +147,7 @@ p {
 
 .btn.primary {
     background-color: #eff5e3;
-    color: #395832;
+    color: var(--primary-color);
 }
 
 @media screen and (max-width: 1250px) {

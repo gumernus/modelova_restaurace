@@ -72,14 +72,14 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(57, 88, 50, 0.8);
+  background-color: var(--overlay-color);
   border-radius: 25px;
   z-index: 1;
 }
 
 .small-image.overlay .overlay-text {
   position: relative;
-  color: white;
+  color: var(--title-color-light);;
   font-weight: bold;
   text-decoration: none;
   font-size: 18px;
@@ -106,7 +106,7 @@
 }
 
 .btn.primary {
-  background-color: #395832;
+  background-color: var(--primary-color);
   color: #eff5e3;
 }
 
