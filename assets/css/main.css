@@ -2,7 +2,7 @@
 
 body {
     padding: 50px;
-    padding-bottom: 0;
+    padding-bottom: 0px;
     background-color: #EFF5E3;
     font-family: "Montserrat", sans-serif;
 }
@@ -37,4 +37,9 @@ body label {
     font-weight: bold;
     color: #395832;
     text-transform: uppercase;
+}
+
+ul {
+    list-style-type: disc;
+    color: #4b4b4b;
 }

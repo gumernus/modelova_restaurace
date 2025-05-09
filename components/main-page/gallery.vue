@@ -6,12 +6,12 @@
       <div class="small-images">
         <div class="small-image" style="background-image: url('/image-37.png');"></div>
         <div class="small-image overlay" style="background-image: url('/image-36.png');">
-          <a href="#" class="overlay-text">+19 dalších</a>
+          <nuxt-link to="/gallery" class="overlay-text">+19 dalších</nuxt-link>
         </div>
       </div>
     </div>
     <div class="controls">
-      <button class="btn primary">Zobrazit celou galerii</button>
+      <nuxt-link to="/gallery" class="btn primary">Zobrazit celou galerii</nuxt-link>
     </div>
   </section>
 </template>

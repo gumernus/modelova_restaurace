@@ -2,14 +2,14 @@
   <nav class="navbar">
     <a href="/" class="brand">Vaše Restaurace</a>
     <div class="nav-links">
-      <a href="#onas" class="link">O nás</a>
-      <a href="#menu" class="link">Menu</a>
-      <a href="#recenze" class="link">Recenze</a>
-      <a href="#galerie" class="link">Galerie</a>
-      <a href="#kontakty" class="link">Kontakty</a>
-      <a href="#rezervace" class="reserve-btn">
+      <NuxtLink to="/#onas" class="link">O nás</NuxtLink>
+      <NuxtLink to="/#menu" class="link">Menu</NuxtLink>
+      <NuxtLink to="/#recenze" class="link">Recenze</NuxtLink>
+      <NuxtLink to="/#galerie" class="link">Galerie</NuxtLink>
+      <NuxtLink to="/#kontakty" class="link">Kontakty</NuxtLink>
+      <NuxtLink to="/#rezervace" class="reserve-btn">
         <span class="reserve-text">Rezervovat</span>
-      </a>
+      </NuxtLink>
     </div>
   </nav>
 </template>
@@ -69,7 +69,7 @@
   color: #395832;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1000px) {
 .nav-links { display: none;}
 }
 </style>
