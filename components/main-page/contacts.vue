@@ -131,7 +131,7 @@
   .content {
     align-items: center;
     flex-direction: row;
-    gap: 30px;
+    gap: 50px;
   }
 
   .column {
@@ -141,7 +141,15 @@
 
 @media (max-width: 600px) {
   .content {
+    flex-direction: row;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  .content {
     flex-direction: column;
+    gap: 50px;
   }
 }
 </style>

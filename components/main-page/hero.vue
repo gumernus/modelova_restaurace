@@ -57,7 +57,7 @@
 }
 
 .hero-image {
-  flex: 0.6; 
+  flex: 0.6;
   border-radius: 25px;
   background: url('/image-23.png') no-repeat center center;
   background-size: cover;
@@ -102,20 +102,36 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding: 50px;
+  padding: 25px;
   border-radius: 25px;
-  background-color: var(--title-color-light);;
+  background-color: var(--title-color-light);
+  ;
   border: 1px solid var(--primary-color);
   min-width: 260px;
 }
 
 @media (max-width: 800px) {
   .hero-content {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .hero-image {
     min-height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .hero {
+    padding-top: 100px;
+  }
+
+  .hero-content {
+    padding-bottom: 100px;
+  }
+
+  .hero-text {
+    padding: 0;
   }
 }
 </style>

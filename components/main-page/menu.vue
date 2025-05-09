@@ -8,7 +8,8 @@
                     <h2>Burgery</h2>
                     <p>Šťavnaté maso, domácí pečivo a jemné omáčky. Naše burgery jsou vyvážené, plné chuti a podávané s
                         precizností.</p>
-                    <nuxt-link :to="{ path: '/menu', hash: '#burgers' }" class="btn primary">Přejít na nabídku</nuxt-link>
+                    <nuxt-link :to="{ path: '/menu', hash: '#burgers' }" class="btn primary">Přejít na
+                        nabídku</nuxt-link>
                 </div>
             </div>
             <div class="item">
@@ -17,7 +18,8 @@
                     <h2>Saláty</h2>
                     <p>Čerstvá zelenina a sezónní suroviny kombinované s lehkými zálivkami. V každém soustu najdete
                         svěžest.</p>
-                    <nuxt-link :to="{ path: '/menu', hash: '#salads' }" class="btn primary">Přejít na nabídku</nuxt-link>
+                    <nuxt-link :to="{ path: '/menu', hash: '#salads' }" class="btn primary">Přejít na
+                        nabídku</nuxt-link>
                 </div>
             </div>
             <div class="item">
@@ -35,7 +37,8 @@
                     <h2>Bezmasá jídla</h2>
                     <p>Rostlinné ingredience v nápaditých kombinacích. Bez masa, ale s plnou, vyváženou chutí, která vás
                         překvapí.</p>
-                    <nuxt-link :to="{ path: '/menu', hash: '#vegetarian' }" class="btn primary">Přejít na nabídku</nuxt-link>
+                    <nuxt-link :to="{ path: '/menu', hash: '#vegetarian' }" class="btn primary">Přejít na
+                        nabídku</nuxt-link>
                 </div>
             </div>
             <div class="item big-item">
@@ -46,7 +49,8 @@
                         detailu, kombinují tradiční cukrářské techniky s moderními trendy. Čokoláda, ovoce a ořechy v
                         harmonických kombinacích, které zanechají nezapomenutelný dojem. Každý zákusek je pečlivě
                         navržen, aby zůstal v paměti a dodal vaší návštěvě sladkou tečku.</p>
-                    <nuxt-link :to="{ path: '/menu', hash: '#desserts' }" class="btn primary">Přejít na nabídku</nuxt-link>
+                    <nuxt-link :to="{ path: '/menu', hash: '#desserts' }" class="btn primary">Přejít na
+                        nabídku</nuxt-link>
                 </div>
             </div>
         </div>
@@ -62,7 +66,8 @@
 h1,
 h2,
 p {
-    color: var(--title-color-light);;
+    color: var(--title-color-light);
+    ;
 }
 
 .menu {
@@ -182,6 +187,22 @@ p {
 
     .item {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .big-item {
+        padding: 25px;
+    }
+
+    .item-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .item {
+        flex-direction: column;
+        gap: 25px;
     }
 }
 </style>

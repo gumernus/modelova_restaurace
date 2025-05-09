@@ -353,14 +353,11 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 h1, h2{
-    margin-left: -25px;
+    margin-left: 0px;
 }
     .menu-row {
-        margin-right: -50px;
-        margin-left: -50px;
-        border-radius: 0px;
     }
 
     .menu-name {

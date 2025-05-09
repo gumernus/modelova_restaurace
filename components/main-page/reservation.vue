@@ -152,7 +152,7 @@ input {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 20px;
+  padding: 15px 25px;
   border-radius: 9999px;
   text-decoration: none;
   font-size: 15px;
@@ -164,7 +164,7 @@ input {
 .field.poznamka textarea {
   width: 100%;
   height: 150px;
-  padding: 16px;
+  padding: 25px;
   border: 1px solid var(--primary-color);
   border-radius: 25px;
   font-size: 15px;
