@@ -8,45 +8,45 @@
                     <h2>Burgery</h2>
                     <p>Šťavnaté maso, domácí pečivo a jemné omáčky. Naše burgery jsou vyvážené, plné chuti a podávané s
                         precizností.</p>
-                    <a href="#neco" class="btn primary">Přejít na nabídku</a>
+                    <nuxt-link :to="{ path: '/menu', hash: '#burgers' }" class="btn primary">Přejít na nabídku</nuxt-link>
                 </div>
             </div>
             <div class="item">
-                <img src="/image-31.png" alt="Burger" class="item-image" />
+                <img src="/image-31.png" alt="Salát" class="item-image" />
                 <div class="item-content">
                     <h2>Saláty</h2>
                     <p>Čerstvá zelenina a sezónní suroviny kombinované s lehkými zálivkami. V každém soustu najdete
                         svěžest.</p>
-                    <a href="#neco" class="btn primary">Přejít na nabídku</a>
+                    <nuxt-link :to="{ path: '/menu', hash: '#salads' }" class="btn primary">Přejít na nabídku</nuxt-link>
                 </div>
             </div>
             <div class="item">
-                <img src="/image-32.png" alt="Burger" class="item-image" />
+                <img src="/image-32.png" alt="Česká kuchyně" class="item-image" />
                 <div class="item-content">
                     <h2>Česká kuchyně</h2>
                     <p>Tradiční české recepty v moderním pojetí. Vychutnejte si klasiku s lehkostí a důrazem na kvalitu.
                     </p>
-                    <a href="#neco" class="btn primary">Přejít na nabídku</a>
+                    <nuxt-link :to="{ path: '/menu', hash: '#czech' }" class="btn primary">Přejít na nabídku</nuxt-link>
                 </div>
             </div>
             <div class="item">
-                <img src="/image-35.png" alt="Burger" class="item-image" />
+                <img src="/image-35.png" alt="Bezmasá jídla" class="item-image" />
                 <div class="item-content">
                     <h2>Bezmasá jídla</h2>
                     <p>Rostlinné ingredience v nápaditých kombinacích. Bez masa, ale s plnou, vyváženou chutí, která vás
                         překvapí.</p>
-                    <a href="#neco" class="btn primary">Přejít na nabídku</a>
+                    <nuxt-link :to="{ path: '/menu', hash: '#vegetarian' }" class="btn primary">Přejít na nabídku</nuxt-link>
                 </div>
             </div>
             <div class="item big-item">
-                <img src="/image-34.png" alt="Burger" class="item-image" />
+                <img src="/image-34.png" alt="Dezerty" class="item-image" />
                 <div class="item-content">
                     <h2>Dezerty</h2>
                     <p>Naše dezerty jsou skutečným zážitkem pro vaše smysly. Ručně vyráběné s láskou a pozorností k
                         detailu, kombinují tradiční cukrářské techniky s moderními trendy. Čokoláda, ovoce a ořechy v
                         harmonických kombinacích, které zanechají nezapomenutelný dojem. Každý zákusek je pečlivě
                         navržen, aby zůstal v paměti a dodal vaší návštěvě sladkou tečku.</p>
-                    <a href="#neco" class="btn primary">Přejít na nabídku</a>
+                    <nuxt-link :to="{ path: '/menu', hash: '#desserts' }" class="btn primary">Přejít na nabídku</nuxt-link>
                 </div>
             </div>
         </div>

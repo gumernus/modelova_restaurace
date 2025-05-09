@@ -93,7 +93,7 @@
 
     </div>
     <div class="controls">
-      <button class="btn primary">Zobrazit všechny recenze</button>
+      <nuxt-link :to="{ path: '/reviews', hash: '#all-reviews' }" class="btn primary">Zobrazit všechny recenze</nuxt-link>
       <div class="arrows">
         <button class="btn secondary" @click="scrollLeft">←</button>
         <button class="btn secondary" @click="scrollRight">→</button>

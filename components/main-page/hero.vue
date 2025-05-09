@@ -9,7 +9,7 @@
         </p>
         <div class="buttons">
           <a href="#rezervace" class="btn primary">Rezervovat</a>
-          <a href="#kontakt" class="btn secondary">Kontaktovat</a>
+          <a href="#kontakty" class="btn secondary">Kontaktovat</a>
         </div>
       </div>
       <div class="hero-image"></div> <!-- Zmizelo <img>, máme jen div -->
