@@ -306,6 +306,7 @@
     padding: 25px;
     border-radius: 25px;
     background-color: #f9f9f9;
+    border: 1px solid var(--primary-color); /* Added border */
 }
 
 .menu-name {
