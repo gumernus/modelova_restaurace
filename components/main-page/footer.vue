@@ -11,9 +11,9 @@
             <div class="footer-links">
                 <div class="link-group">
                     <h3 class="title">Rychlé odkazy</h3>
-                    <NuxtLink to="#menu" class="link">Menu</NuxtLink>
-                    <NuxtLink to="#recenze" class="link">Recenze</NuxtLink>
-                    <NuxtLink to="#kontakty" class="link">Kontakt</NuxtLink>
+                    <NuxtLink to="/#menu" class="link">Menu</NuxtLink>
+                    <NuxtLink to="/#recenze" class="link">Recenze</NuxtLink>
+                    <NuxtLink to="/#kontakty" class="link">Kontakt</NuxtLink>
                 </div>
                 <div class="link-group">
                     <h3 class="title">Další</h3>
