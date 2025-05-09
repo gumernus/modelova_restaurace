@@ -1,25 +1,25 @@
 <template>
     <div>
-      <RestauraceNavbar></RestauraceNavbar>
+      <Main-PageNavbar></Main-PageNavbar>
       <section id="onas">
-        <RestauraceHero></RestauraceHero>
+        <Main-PageHero></Main-PageHero>
       </section>
       <section id="menu">
-        <RestauraceMenu></RestauraceMenu>
+        <Main-PageMenu></Main-PageMenu>
       </section>
       <section id="rezervace">
-        <RestauraceReservation></RestauraceReservation>
+        <Main-PageReservation></Main-PageReservation>
       </section>
       <section id="recenze">
-        <RestauraceReviews></RestauraceReviews>
+        <Main-PageReviews></Main-PageReviews>
       </section>
       <section id="galerie">
-        <RestauraceGallery></RestauraceGallery>
+        <Main-PageGallery></Main-PageGallery>
       </section>
       <section id="kontakty">
-        <RestauraceContacts></RestauraceContacts>
+        <Main-PageContacts></Main-PageContacts>
       </section>
-      <RestauraceFooter></RestauraceFooter>
+      <Main-PageFooter></Main-PageFooter>
     </div>
   </template>
   
